@@ -12,7 +12,8 @@ a {
 
 #header {
   width: 100%;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  background: #f7f7f7; }
   #header .inner {
     width: 1180px;
     height: 120px;
@@ -27,7 +28,7 @@ a {
       top: 42px; }
       #header .inner h1 a {
         font: bold 32px/1 'Montagu Slab';
-        color: #555; }
+        color: #252422; }
     #header .inner #gnb > li {
       float: left; }
       #header .inner #gnb > li > a {
@@ -41,13 +42,15 @@ a {
         display: inline-block;
         padding: 10px 30px;
         font: 12px/1 'Raleway';
-        color: #999;
+        color: #252422;
         letter-spacing: 1px; }
       #header .inner #util li .util {
         position: fixed;
         right: 0;
         top: 42px;
-        margin-right: 80px; }
+        margin-right: 80px;
+        font: 12px/1 'Raleway';
+        color: #252422; }
     #header .inner .btnCall {
       position: fixed;
       right: 2vw;
@@ -95,5 +98,59 @@ a {
         margin-bottom: -1px; }
       #header .inner .btnCall.on span {
         opacity: 0; }
+
+#footer {
+  position: relative;
+  width: 100%;
+  background: #f7f7f7;
+  padding: 35px 0 15px; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer .inner .top {
+      padding: 15px 0; }
+      #footer .inner .top div {
+        display: block; }
+        #footer .inner .top div ul {
+          display: flex; }
+          #footer .inner .top div ul li {
+            padding-right: 30px; }
+            #footer .inner .top div ul li a {
+              font: 16px/1 'Raleway';
+              color: #252522; }
+    #footer .inner hr {
+      border-top: 1px solid #8b8b8a;
+      margin: 1rem auto; }
+    #footer .inner .bottom {
+      padding: 15px 0; }
+      #footer .inner .bottom .box {
+        display: flex;
+        align-items: center; }
+        #footer .inner .bottom .box .sign {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-right: 30px;
+          font: 400 12px/1 'Raleway';
+          color: #252522; }
+          #footer .inner .bottom .box .sign a {
+            font: 12px/1 'Raleway';
+            color: #252522; }
+        #footer .inner .bottom .box .terms ul {
+          display: flex; }
+          #footer .inner .bottom .box .terms ul li {
+            padding-right: 30px; }
+        #footer .inner .bottom .box .terms a {
+          font: 12px/1 'Raleway';
+          color: #252522; }
+      #footer .inner .bottom .credits {
+        margin-top: 20px; }
+        #footer .inner .bottom .credits span {
+          font: 12px/1 'Raleway';
+          color: #252522; }
+        #footer .inner .bottom .credits .separator {
+          margin: 0 10px; }
+        #footer .inner .bottom .credits a {
+          font: 12px/1 'Raleway';
+          color: #252522; }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,10 +6,10 @@
 // font-family: 'Raleway', sans-serif;
 
 
-//배경하늘 #bfd8dd
+//배경하늘 #f7f7f7
 //포인트노랑 #f5e10d
 //파랑 #393df2
-//로고만 주황 #e26a3f
+//로고만 주황 #252422
 
 // body { width: 100%; overflow: hidden;}
 
@@ -17,6 +17,7 @@
 #header{
     width: 100%;
     border-bottom: 1px solid #ddd;
+    background: #f7f7f7;
 
     .inner{
         width: 1180px;
@@ -34,7 +35,7 @@
             top: 42px;
             a{
                 font:bold 32px/1 'Montagu Slab';
-                color:#555;
+                color:#252422;
             }
         }
 
@@ -57,7 +58,7 @@
                     display: inline-block;
                     padding: 10px 30px;
                     font: 12px/1 'Raleway';
-                    color: #999;
+                    color: #252422;
                     letter-spacing: 1px;
                 }
                 .util{
@@ -65,6 +66,9 @@
                     right: 0;
                     top: 42px;
                     margin-right: 80px;
+
+                    font: 12px/1 'Raleway';
+                    color: #252422;
                 }
             }
         }
@@ -121,6 +125,88 @@
                 span{
                     // transform:translateX(100%);
                      opacity:0;  
+                }
+            }
+        }
+    }
+}
+
+//  header  ------------------------------
+
+#footer{
+    position: relative;
+    width: 100%;
+    background : #f7f7f7;
+    padding: 35px 0 15px;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+
+        .top{
+
+            padding: 15px 0;
+            div{
+                display: block;
+                ul{
+                    display: flex;
+                    li{
+                        padding-right: 30px;
+                        a{
+                            font: 16px/1 'Raleway';
+                            color:#252522;
+                        }
+                    }
+                }
+            }
+        }
+
+        hr{
+            border-top: 1px solid #8b8b8a;
+            margin: 1rem auto
+        }
+
+        .bottom{
+            padding: 15px 0;
+            .box{
+                display: flex;
+                align-items: center;
+                .sign{
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-right: 30px;
+                    font: 400 12px/1 'Raleway';
+                    color:#252522;
+                    a{
+                        font: 12px/1 'Raleway';
+                        color:#252522;
+                    }
+                }
+                .terms{
+                    ul{
+                        display: flex;
+                        li{
+                            padding-right: 30px;
+                        }
+                    }
+                    a{
+                        font: 12px/1 'Raleway';
+                        color:#252522;
+                    }
+                }
+            }
+            .credits{
+                margin-top: 20px;
+                span{
+                    font: 12px/1 'Raleway';
+                    color:#252522;
+                }
+                .separator{
+                    margin: 0 10px;
+                }
+                a{
+                    font: 12px/1 'Raleway';
+                    color:#252522;
                 }
             }
         }
