@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap");
 * {
   margin: 0px;
@@ -9,6 +10,19 @@ ul, ol {
 
 a {
   text-decoration: none; }
+
+#skip a {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background: #f2a8a8;
+  font: bold 16px/30px "돋움";
+  color: #242424;
+  top: -30px;
+  left: 0;
+  text-align: center; }
+  #skip a.on {
+    top: 0px; }
 
 #header {
   width: 100%;
