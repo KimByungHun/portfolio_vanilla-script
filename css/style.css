@@ -34,8 +34,24 @@ a {
       #header .inner #gnb > li > a {
         display: inline-block;
         padding: 20px 30px;
+        width: 150px;
         font: bold 15px/1 'Raleway';
-        color: #666; }
+        color: #666;
+        text-align: center; }
+      #header .inner #gnb > li .sub {
+        display: none;
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        padding: 50px;
+        z-index: 5;
+        background: #efefef; }
+        #header .inner #gnb > li .sub a {
+          font: bold 14px/1 "Raleway";
+          color: #252422; }
+      #header .inner #gnb > li:hover a {
+        background: #efefef;
+        color: #8b8b8a; }
     #header .inner #util li {
       float: left; }
       #header .inner #util li a {

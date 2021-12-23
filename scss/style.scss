@@ -45,8 +45,31 @@
                 >a{
                     display: inline-block;
                     padding: 20px 30px;
+                    width: 150px;
                     font: bold 15px/1 'Raleway';
                     color: #666;
+                    text-align: center;
+                }
+
+                .sub{
+                    display: none;
+                    width: 150px; height: 200px;
+                    position: absolute;
+                    padding: 50px;
+                    z-index: 5;
+                    background: #efefef;
+
+
+                    a{
+                        font: bold 14px/1 "Raleway";
+                        color: #252422;
+                    }
+                }
+                &:hover{
+                    a{
+                        background: #efefef;
+                        color: #8b8b8a;
+                    }
                 }
             }
         }
@@ -132,7 +155,6 @@
 }
 
 //  header  ------------------------------
-
 #footer{
     position: relative;
     width: 100%;
