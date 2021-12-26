@@ -25,18 +25,13 @@
     }
 }
 
-.scroll_test{
-    position: fixed;
-    top:0; left: 0;
-    font-size: 100px;
-    z-index: 2;
-}
 
 // 기본 섹션 UI section --------
 
 section{
     width:100%; 
-    position:relative; 
+    position:relative;
+    z-index: 2;
 
      &:nth-of-type(1){ height: 1000px; background:orange; }
     &:nth-of-type(2){ height:800px; background: hotpink; }
@@ -50,6 +45,7 @@ section{
 
  #scroll_ui{
     position:fixed; top:50%; right:50px; transform:translateY(-50%); 
+    z-index: 5;
 
      li{
        width:20px; height:20px; border-radius:10px; background:#fff; 
@@ -67,6 +63,7 @@ section{
     width: 100%;
     border-bottom: 1px solid #ddd;
     background: #f7f7f7;
+    z-index: 5;
 
     .inner{
         width: 1180px;
@@ -86,6 +83,7 @@ section{
                 font:bold 32px/1 'Montagu Slab';
                 color:#252422;
             }
+            z-index: 5;
         }
 
         #gnb{
@@ -141,6 +139,7 @@ section{
 
                     font: 12px/1 'Raleway';
                     color: #252422;
+                    z-index: 5;
                 }
             }
         }
@@ -152,6 +151,7 @@ section{
 
             width: 20px;
             height: 20px;
+            z-index: 5;
 
 
             &::before{

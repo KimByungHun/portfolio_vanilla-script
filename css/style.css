@@ -24,16 +24,10 @@ a {
   #skip a.on {
     top: 0px; }
 
-.scroll_test {
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-size: 100px;
-  z-index: 2; }
-
 section {
   width: 100%;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
   section:nth-of-type(1) {
     height: 1000px;
     background: orange; }
@@ -51,7 +45,8 @@ section {
   position: fixed;
   top: 50%;
   right: 50px;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  z-index: 5; }
   #scroll_ui li {
     width: 20px;
     height: 20px;
@@ -67,7 +62,8 @@ section {
 #header {
   width: 100%;
   border-bottom: 1px solid #ddd;
-  background: #f7f7f7; }
+  background: #f7f7f7;
+  z-index: 5; }
   #header .inner {
     width: 1180px;
     height: 120px;
@@ -79,7 +75,8 @@ section {
     #header .inner h1 {
       position: fixed;
       left: 2vw;
-      top: 42px; }
+      top: 42px;
+      z-index: 5; }
       #header .inner h1 a {
         font: bold 32px/1 'Montagu Slab';
         color: #252422; }
@@ -120,14 +117,16 @@ section {
         top: 42px;
         margin-right: 80px;
         font: 12px/1 'Raleway';
-        color: #252422; }
+        color: #252422;
+        z-index: 5; }
     #header .inner .btnCall {
       position: fixed;
       right: 2vw;
       top: 60px;
       transform: translateY(-50%);
       width: 20px;
-      height: 20px; }
+      height: 20px;
+      z-index: 5; }
       #header .inner .btnCall::before {
         content: '';
         display: block;

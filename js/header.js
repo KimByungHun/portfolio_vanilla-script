@@ -34,9 +34,3 @@ btns.forEach((btn, index)=>{
     })
 })
 
-const h1 = document.querySelector(".scroll_test");
-
-window.addEventListener("scroll", e=>{
-    let scroll = window.scrollY || window.pageYOffset;
-    h1.innerText = scroll;
-})
