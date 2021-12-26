@@ -6,7 +6,7 @@ class Anim {
         (option.duration==undefined) ? this.speed = 500 : this.speed = option.duration;    
         this.currentValue;
         this.timer;
-
+      
         if(this.option.prop === "scroll"){
             this.currentValue = parseInt(window.scrollY || window.pageYOffset);
         }else if(this.selector.style[this.option.prop]){           
@@ -22,7 +22,7 @@ class Anim {
                 this.currentValue = parseInt(getComputedStyle(this.selector)[this.option.prop]);
             }
         }
-
+        
         this.isString = typeof this.option.value;
         if(this.isString == "string") this.option.value = parseFloat(this.option.value);
         if(this.option.value !== this.currentValue) requestAnimationFrame(time =>{this.run(time)});    
@@ -43,7 +43,7 @@ class Anim {
         }
 
         let result = this.currentValue + ((this.option.value- this.currentValue)*progress);
-
+        
         if(this.option.prop === "opacity"){
             this.selector.style[this.option.prop] = result; 
         } else if(this.option.prop === "scroll"){
