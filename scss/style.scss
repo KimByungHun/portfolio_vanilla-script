@@ -25,6 +25,13 @@
     }
 }
 
+.scroll_test{
+    position: fixed;
+    top:0; left: 0;
+    font-size: 100px;
+    z-index: 2;
+}
+
 // 기본 섹션 UI section --------
 
 section{

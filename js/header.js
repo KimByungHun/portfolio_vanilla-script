@@ -33,3 +33,10 @@ btns.forEach((btn, index)=>{
         e.currentTarget.classList.remove("on");
     })
 })
+
+const h1 = document.querySelector(".scroll_test");
+
+window.addEventListener("scroll", e=>{
+    let scroll = window.scrollY || window.pageYOffset;
+    h1.innerText = scroll;
+})
