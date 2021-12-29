@@ -226,18 +226,6 @@ section {
     top: 50%;
     margin-top: -50px; }
 
-.prev {
-  position: absolute;
-  left: 50px;
-  top: 50%;
-  margin-top: -50px; }
-
-.next {
-  position: absolute;
-  right: 50px;
-  top: 50%;
-  margin-top: -50px; }
-
 #footer {
   position: relative;
   width: 100%;
