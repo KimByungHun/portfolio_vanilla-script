@@ -1,19 +1,17 @@
 const slider = document.querySelector("#figure");
-const ul = slider.querySelector("ul");
-const slider_lis = ul.querySelectorAll("li");
-const prev = slider.querySelector(".prev");
-const next = slider.querySelector(".next");
-const slider_speed = 500;
-const slider_len = slider_lis.length;
+const slide_ul = slider.querySelector("ul");
+const slide_lis = slide_ul.querySelectorAll("li");
+const slide_prev = slider.querySelector(".prev");
+const slide_next = slider.querySelector(".next");
+const slide_speed = 500;
+const slide_len = slide_lis.length;
 let enableClick = true;
-
 
 
 init();
 
-ul.style.left = "-100%";
 
-next.addEventListener("click", e => {
+slide_next.addEventListener("click", e => {
     e.preventDefault();
 
     if (enableClick) {
@@ -22,35 +20,43 @@ next.addEventListener("click", e => {
     }
 })
 
+slide_prev.addEventListener("click", e => {
+    e.preventDefault();
+
+    if (enableClick) {
+        enableClick = false;
+        prevSlide();
+    }
+})
+
 function init() {
-    ul.style.width = `${100 * slider_len}%`;
-    slider_lis.forEach(li => li.style.width = `${100 / slider_len}%`);
-    ul.style.left = "-100%";
-    ul.prepend(ul.lastElementChild);
+    slide_ul.style.width = `${100 * slide_len}%`;
+    slide_lis.forEach(slide_li => slide_li.style.width = `${100 / slide_len}%`);
+    slide_ul.style.left = "-100%";
+    slide_ul.prepend(slide_ul.lastElementChild);
 }
 
-
 function nextSlide() {
-    new Anim(ul, {
+    new Anim(slide_ul, {
         prop: "left",
         value: "-200%",
-        duration: slider_speed,
+        duration: slide_speed,
         callback: () => {
-            ul.style.left = "-100%";
-            ul.append(ul.firstElementChild);
+            slide_ul.style.left = "-100%";
+            slide_ul.append(slide_ul.firstElementChild);
             enableClick = true;
         }
     })
 }
 
 function prevSlide() {
-    new Anim(ul, {
+    new Anim(slide_ul, {
         prop: "left",
         value: "0%",
-        duration: slider_speed,
+        duration: slide_speed,
         callback: () => {
-            ul.style.left = "-100%";
-            ul.prepend(ul.lastElementChild);
+            slide_ul.style.left = "-100%";
+            slide_ul.prepend(slide_ul.lastElementChild);
             enableClick = true;
         }
     })
