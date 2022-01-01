@@ -11,6 +11,16 @@
     <script defer src="js/scroll.js"></script>
     <script defer src="js/slide.js"></script>
 
+    <script>
+        window.addEventListener("load",()=>{
+             new LoopSlider("#slider",{
+                 panel: "ul",
+                 prev : ".prev",
+                 next : ".next"
+             });
+         })
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
 
     
@@ -18,7 +28,7 @@
 </head>
 <body>
     <div id="skip">
-        <a href="#">주메ㅃ뉴 바로가기</a>
+        <a href="#">주메뉴 바로가기</a>
         <a href="#">본문 바로가기</a>
         <a href="#">하단메뉴 바로가기</a>
     </div>
@@ -72,7 +82,7 @@
         </div>
     </header>
 
-    <figure id="figure">
+    <figure id="slider">
         <ul>
             <li data-index="1">1</li>
             <li data-index="2">2</li>
