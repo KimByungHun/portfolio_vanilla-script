@@ -1,0 +1,80 @@
+//  footer_sub  ------------------------------
+#footer_sub{
+    position: relative;
+    width: 100%;
+    background : #f7f7f7;
+    padding: 35px 0 15px;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+
+        .top{
+
+            padding: 15px 0;
+            div{
+                display: block;
+                ul{
+                    display: flex;
+                    li{
+                        padding-right: 30px;
+                        a{
+                            font: 16px/1 'Raleway';
+                            color:#252522;
+                        }
+                    }
+                }
+            }
+        }
+
+        hr{
+            border-top: 1px solid #8b8b8a;
+            margin: 1rem auto
+        }
+
+        .bottom{
+            padding: 15px 0;
+            .box{
+                display: flex;
+                align-items: center;
+                .sign{
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-right: 30px;
+                    font: 400 12px/1 'Raleway';
+                    color:#252522;
+                    a{
+                        font: 12px/1 'Raleway';
+                        color:#252522;
+                    }
+                }
+                .terms{
+                    ul{
+                        display: flex;
+                        li{
+                            padding-right: 30px;
+                        }
+                    }
+                    a{
+                        font: 12px/1 'Raleway';
+                        color:#252522;
+                    }
+                }
+            }
+            .credits{
+                margin-top: 20px;
+                span{
+                    font: 12px/1 'Raleway';
+                    color:#252522;
+                }
+                .separator{
+                    margin: 0 10px;
+                }
+                a{
+                    font: 12px/1 'Raleway';
+                    color:#252522;
+                }
+            }
+        }
+    }
+}
