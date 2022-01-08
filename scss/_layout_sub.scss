@@ -5,23 +5,16 @@
     padding: 0px 0px;
 
     .sub_visual {
-        width: 100%; height: calc(300px);  
-        background: gray;
-        // background: url(../img/sub_visual2.jpg) no-repeat center/cover; 
+        width: 100%; height: 250px;  
+        background: gray; 
         margin-bottom: 50px;
         text-align: center;
-        // padding-top: 210px;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        
+        padding-top: 50px;
 
         h1{
-            display: block;
+            display: inline-block;
             font: bold 54px/1 'poppins';
             color: #fff;
-            margin-left: 35vw;
-            text-align: left;
 
 
             &::after{
@@ -35,13 +28,10 @@
         }
 
         h2{
-            font: bold 16px/1 'Gothic A1';
+            font: bold 26px/1 'Gothic A1';
             letter-spacing: 1px;
             color: #fff;
-            text-align: left;
-            margin-left: 50vw;
-
-            
+            // padding-top: 10px;
         }
     }
     .inner {
